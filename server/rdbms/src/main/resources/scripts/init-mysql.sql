@@ -1904,7 +1904,7 @@ CREATE TABLE `t_sys_info` (
 -- Records of t_sys_info
 -- ----------------------------
 BEGIN;
-INSERT INTO `t_sys_info` VALUES ('1', '卷王', '做更好的调查问卷系统', NULL, 'zh-CN', NULL, 1, '2022-02-11 10:13:19', NULL, '2022-02-11 14:29:03', NULL);
+INSERT INTO `t_sys_info` VALUES ('1', '卷王', '做更好的调查问卷系统', NULL, 'zh-CN', NULL, NULL, 1, '2022-02-11 10:13:19', NULL, '2022-02-11 14:29:03', NULL);
 COMMIT;
 
 -- ----------------------------
@@ -2014,3 +2014,5 @@ INSERT INTO `t_user_role` VALUES ('1488542015867121666', 'SysUser', 145799548196
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+alter table t_role add column status int default 1;
